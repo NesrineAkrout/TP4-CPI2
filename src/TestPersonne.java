@@ -8,14 +8,10 @@ public class TestPersonne {
 		personnes[3] = new Etudiant("Hichem",2);
 		for (Personne p : personnes)
 		{
+		
 			p.affiche();
-		    if(p instanceof Etudiant)
-		  
-		    {	
-		    Etudiant e=(Etudiant)p;
-		    System.out.println(e.age);
 		    }
 		}
 		
 		}
-}
+

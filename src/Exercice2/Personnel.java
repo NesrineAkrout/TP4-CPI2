@@ -2,8 +2,8 @@ package Exercice2;
 
 public class Personnel {
 	 private Employe[] staff;
-	    private int nbreEmploye;
-	    private final static int MAXEMPLOYE = 200;
+	 private int nbreEmploye;
+	 private final static int MAXEMPLOYE = 200;
 	 
 	    public Personnel() {
 	        staff = new Employe[MAXEMPLOYE];
@@ -11,10 +11,11 @@ public class Personnel {
 	    }
 	 
 	    public void ajouterEmploye(Employe e) {
-	        ++nbreEmploye;
 	        if (nbreEmploye < MAXEMPLOYE) {
-	            staff[nbreEmploye - 1] = e;
-	        } else {
+	            staff[nbreEmploye] = e;
+	            nbreEmploye++;
+	        } 
+	        else {
 	            System.out.println("Pas plus de " + MAXEMPLOYE + " employés");
 	        }
 	    }
@@ -23,6 +24,7 @@ public class Personnel {
 	        double somme = 0.0;
 	        for (int i = 0; i < nbreEmploye; i++) {
 	            somme += staff[i].calculerSalaire();
+	        
 	        }
 	        return somme / nbreEmploye;
 	    }
