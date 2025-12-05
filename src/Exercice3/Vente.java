@@ -9,7 +9,7 @@ public static void main (String[] args)
   obj1.setQte(Double.parseDouble(args[1]));
   obj1.setTVA(Double.parseDouble(args[2]));
 System.out.println("Caractéristiques de l'article :"+obj1);
-Article.afficherMontant(obj1.prixTransport());
+//Article.afficherMontant(obj1.prixTransport());
 Exportable.afficherMontant(obj1.prixTransport());
 System.out.println("Prix Net de l'article : "+obj1.prixNet(450));
 java.util.Scanner sc = new java.util.Scanner(System.in);

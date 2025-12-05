@@ -59,12 +59,9 @@ public class Article implements Exportable {
 	}
 	public double prixNet(double fraisDouane)
 	{
-	return this.Qte*this.PHT*this.TVA+this.Qte*this.PHT+this.Qte*this.prixTransport() +
-	defaultMethod(fraisDouane,this.Qte);
-	}
-	public static void afficherMontant(double montant)
-	{
-	System.out.println("Montant est : "+montant);
+	return Qte*PHT*TVA+Qte*PHT+Qte*prixTransport() +
+	defaultMethod(fraisDouane,Qte);
+	
 	}
 	
 	}

@@ -12,8 +12,8 @@ public class Representant extends Commercial {
 		        return (POURCENT_REPRESENTANT * getChiffreAffaire()) + BONUS_REPRESENTANT;
 		    }
 		 
-		    public String getTitre()
+		    public String getNom()
 		        {
-		            return "Le représentant ";
+		            return "Le représentant "+super.getnom()+" "+super.getPrenom();
 		        }
 }

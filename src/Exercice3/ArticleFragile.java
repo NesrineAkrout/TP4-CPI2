@@ -3,8 +3,8 @@ package Exercice3;
 public class ArticleFragile extends Article {
 
 
-double prixEmballage;
-String emballage;
+    double prixEmballage;
+    String emballage;
 public ArticleFragile(int Code, String Ref, double PHT, double Qte, double
 TVA,String emballage, double prixEmballage)
 {

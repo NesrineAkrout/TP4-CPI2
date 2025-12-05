@@ -15,12 +15,23 @@ public abstract class Employe {
 	    }
 	 
 	    public abstract double calculerSalaire();
-	    public String getTitre()
-	    {
-		return "L'employé ";
+	    
+	    public String getPrenom() {
+			return prenom;
 		}
-	    public String getNom() {
-	        return  getTitre()+ prenom + " " + nom;
+
+		public void setPrenom(String prenom) {
+			this.prenom = prenom;
+		}
+
+		public void setNom(String nom) {
+			this.nom = nom;
+		}
+		public String getnom() {
+	        return  nom;
+	    }
+		public String getNom() {
+	        return  "L'employé"+ prenom + " " + nom;
 	    }
 	}
 

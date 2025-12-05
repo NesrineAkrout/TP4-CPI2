@@ -14,8 +14,10 @@ public class Manutentionnaire extends Employe{
 	        return SALAIRE_HORAIRE * heures;
 	    }
 	 
-	    public String getTitre()
-	        {
-	            return "Le manut. " ;
-	        }
+	    
+	    public String getNom()
+        {
+            return "Le manut. "+super.getnom()+" "+super.getPrenom();
+        }
+
 }

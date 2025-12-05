@@ -13,8 +13,8 @@ public class Vendeur extends Commercial {
 	        return (pourcentVendeur * getChiffreAffaire() + bonusVendeur);
 	    }
 	 
-	    public String getTitre()
-	        {
-	            return "Le vendeur ";
-	        }
+	    public String getNom()
+        {
+            return "Le vendeur "+super.getnom()+" "+super.getPrenom();
+        }
 }

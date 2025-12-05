@@ -12,8 +12,11 @@ public class Technicien extends Employe{
 	    public double calculerSalaire() {
 	        return FACTEUR_UNITE * unites;
 	    }
-	    public String getTitre()
+	    
+	    public String getNom()
 	    {
-	    	return "Le technicien ";
-	    	}
+	    	return "Le technicien "+super.getnom()+" "+getPrenom();
+	    }
 }
+	    
+
